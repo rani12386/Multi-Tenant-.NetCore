@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35431.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MT", "MT\MT.csproj", "{188CDF52-3CCA-4CBA-972C-DDB2D680C8C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MT-Data", "MT-Data\MT-Data.csproj", "{4FF3E2DD-1C6C-4088-90EA-D9B0FD198E4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{188CDF52-3CCA-4CBA-972C-DDB2D680C8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{188CDF52-3CCA-4CBA-972C-DDB2D680C8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{188CDF52-3CCA-4CBA-972C-DDB2D680C8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{188CDF52-3CCA-4CBA-972C-DDB2D680C8C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FF3E2DD-1C6C-4088-90EA-D9B0FD198E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FF3E2DD-1C6C-4088-90EA-D9B0FD198E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FF3E2DD-1C6C-4088-90EA-D9B0FD198E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FF3E2DD-1C6C-4088-90EA-D9B0FD198E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8D929E1-0E72-4167-BE21-EF170806EB04}
+	EndGlobalSection
+EndGlobal
