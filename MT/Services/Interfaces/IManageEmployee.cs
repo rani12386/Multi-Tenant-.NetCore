@@ -5,4 +5,6 @@ namespace MT.Services.Interfaces;
 public interface IManageEmployee
 {
     Task<IEnumerable<EmployeeViewModel>> GetEmployeeModelsAsync(CancellationToken token);
+
+    Task<bool> Create(EmployeeViewModel employeeViewModel, CancellationToken token);
 }

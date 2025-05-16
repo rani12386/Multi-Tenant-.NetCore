@@ -21,5 +21,12 @@ namespace MT.Services
             IEnumerable<EmployeeViewModel> employeeViewModels = _mapper.Map<IEnumerable<EmployeeViewModel>>(employees);
             return employeeViewModels;
         }
+
+        public async Task<bool> Create(EmployeeViewModel employeeViewModel, CancellationToken token)
+        {
+            Employee employee =  _mapper.Map<Employee>(employeeViewModel);
+            int value = await _employeeRepository.AddAsync(employee, token);
+            return value > 0 ? true : false;
+        }
     }
 }

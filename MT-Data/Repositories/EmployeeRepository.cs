@@ -21,4 +21,10 @@ public class EmployeeRepository : IEmployeeRepository
         IEnumerable <Employee> employees = await _context.employees.ToListAsync(token) ?? [];
         return employees;
     }
+    public async Task<int> AddAsync(Employee employee,CancellationToken token)
+    {
+        await _context.employees.AddAsync(employee, token);
+        var result = await _context.SaveChangesAsync(token);
+        return result;
+    }
 }
