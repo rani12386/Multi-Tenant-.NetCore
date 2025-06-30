@@ -9,6 +9,7 @@ public class EmployeeProfile : Profile
     {
         CreateMap<EmployeeViewModel, Employee>()
             .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name));
+        CreateMap<Employee, EmployeeViewModel>();
         //.ForPath(dest => dest.DepartmentName,
         //   opt => opt.MapFrom(src => src.Department.Name)); //here the dest is represents viewmodel and the src represents entity.
     }

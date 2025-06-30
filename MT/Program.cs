@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using MT.Profiles;
 using MT.Services;
 using MT.Services.Interfaces;
 using MT_Data.Context;
@@ -13,7 +14,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<IManageEmployee, ManageEmployeeService>();
-builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 // DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

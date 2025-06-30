@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="14.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -18,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MT-Data\MT-Data.csproj" />
+    <ProjectReference Include="..\MT-Model\MT-Model.csproj" />
   </ItemGroup>
 
 </Project>
